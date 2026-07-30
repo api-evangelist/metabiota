@@ -1,4 +1,16 @@
 aid: metabiota
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/metabiota.png
 name: Metabiota
 description: Metabiota is a company surfaced as a portfolio company of dcvc, gv and added to the API Evangelist
   network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
@@ -12,7 +24,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 apis: []
@@ -24,3 +36,16 @@ maintainers:
 common:
 - type: Website
   url: http://metabiota.com
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  notes: >-
+    Enrichment SEARCH pass completed via WebFetch. No API/developer surface exists
+    for this VC-portfolio lead. The original Metabiota (epidemic-risk / pandemic
+    analytics, DCVC/GV backed) no longer operates as an independent developer
+    platform (its risk product was absorbed by Ginkgo Bioworks / Concentric).
+    metabiota.com now resolves to an UNRELATED health/wellness supplement content
+    site (no docs, no API, no developer portal) — do not harvest its /.well-known
+    or identity as this company's. No OpenAPI in repo, so nothing to derive.
